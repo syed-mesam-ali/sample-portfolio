@@ -19,7 +19,7 @@ const Home = () => {
           <TypeAnimation
             className="text-4xl sm:text-7xl font-bold text-white "
             sequence={["I'm a Frontend Developer", 1000]}
-            speed={60}
+            speed={50}
             wrapper="h2"
           />
 
