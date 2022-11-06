@@ -18,10 +18,9 @@ const Home = () => {
 
           <TypeAnimation
             className="text-4xl sm:text-7xl font-bold text-white "
-            sequence={["I'm a Frontend Developer"]}
+            sequence={["I'm a Frontend Developer", 1000]}
             speed={60}
             wrapper="h2"
-            repeat={Infinity}
           />
 
           <p className="text-gray-500 py-4 max-w-md">
