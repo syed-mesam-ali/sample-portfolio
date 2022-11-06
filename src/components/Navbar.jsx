@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,10 +30,44 @@ const Navbar = () => {
     },
   ];
 
+  const socialLinks = [
+    {
+      id: 1,
+      child: (
+        <>
+          <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/syed-mesam-ali/",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/syed-mesam-ali/",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          <BsFillPersonLinesFill size={30} />
+        </>
+      ),
+      href: "/Syed Mesam Ali_CV.pdf",
+      download: true,
+    },
+  ];
+
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-black  fixed px-4 z-10">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Syed </h1>
+        <h1 className="hidden lg:inline text-5xl font-signature ml-2">
+          Syed &nbsp;Mesam &nbsp;Ali
+        </h1>
+        <h1 className="lg:hidden text-5xl font-signature ml-2">Syed</h1>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
@@ -69,6 +105,21 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li className="px-4 py-6 cursor-pointer ">
+            <div className=" flex items-center gap-8">
+              {socialLinks.map((link) => (
+                <a
+                  href={link.href}
+                  className="flex justify-between items-center"
+                  download={link.download}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {link.child}
+                </a>
+              ))}
+            </div>
+          </li>
         </ul>
       )}
     </div>

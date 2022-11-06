@@ -1,12 +1,13 @@
 import React from "react";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
-import graphql from "../assets/graphql.png";
 import tailwind from "../assets/tailwind.png";
-import nextjs from "../assets/nextjs.png";
 import reactImage from "../assets/react.png";
-import node from "../assets/node.png";
 import html from "../assets/html.png";
+import reduxImage from "../assets/redux.png";
+import jquery from "../assets/jquery.png";
+import bootstrap from "../assets/bootstrap.png";
+import firebase from "../assets/firebase.png";
 
 const Experience = () => {
   const skills = [
@@ -30,33 +31,39 @@ const Experience = () => {
     },
     {
       id: 4,
+      source: jquery,
+      title: "jQuery",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 5,
       source: reactImage,
       title: "React",
       style: "shadow-blue-600",
     },
     {
-      id: 5,
+      id: 6,
+      source: reduxImage,
+      title: "Redux",
+      style: "shadow-purple-600",
+    },
+    {
+      id: 7,
+      source: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-400",
+    },
+    {
+      id: 8,
       source: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
-      id: 6,
-      source: nextjs,
-      title: "Nextjs",
-      style: "shadow-white",
-    },
-    {
-      id: 7,
-      source: graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
-    },
-    {
-      id: 8,
-      source: node,
-      title: "Node",
-      style: "shadow-green-500",
+      id: 9,
+      source: firebase,
+      title: "Firebase",
+      style: "shadow-yellow-300",
     },
   ];
 

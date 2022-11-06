@@ -1,36 +1,48 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import LiveChat from "../assets/portfolio/live-chat.jpg";
+import kanban from "../assets/portfolio/kanban.jpg";
+import connectFriends from "../assets/portfolio/connectFriends.jpg";
+import wizForm from "../assets/portfolio/wizForm.jpg";
+import knight from "../assets/portfolio/knight.jpg";
+import maths from "../assets/portfolio/maths.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      source: arrayDestruct,
+      source: LiveChat,
+      code: "https://github.com/syed-mesam-ali/Live-Chat-App",
+      demo: "https://live-chat-syed.netlify.app/",
     },
     {
       id: 2,
-      source: installNode,
+      source: kanban,
+      code: "https://github.com/syed-mesam-ali/kanban-board/",
+      demo: "https://kanban-board-syed.netlify.app/",
     },
     {
       id: 3,
-      source: navbar,
+      source: connectFriends,
+      code: "https://github.com/syed-mesam-ali/Connect-Friends/",
+      demo: "https://connect-friends-syed.netlify.app/",
     },
     {
       id: 4,
-      source: reactSmooth,
+      source: knight,
+      code: "https://github.com/syed-mesam-ali/Knight-Position-Finder/",
+      demo: "https://knight-position-finder.netlify.app/",
     },
     {
       id: 5,
-      source: reactWeather,
+      source: maths,
+      code: "https://github.com/syed-mesam-ali/maths-quiz-app/",
+      demo: "https://maths-quiz-app-syed.netlify.app/",
     },
     {
       id: 6,
-      source: reactParallax,
+      source: wizForm,
+      code: "https://github.com/syed-mesam-ali/wizardForm-Eden/",
+      demo: "https://edenwizform.netlify.app/",
     },
   ];
 
@@ -48,18 +60,30 @@ const Portfolio = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, source }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+          {portfolios.map(({ id, source, demo, code }) => (
+            <div
+              key={id}
+              className=" relative shadow-md shadow-gray-600 rounded-lg"
+            >
               <img
                 src={source}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 "
               />
+              {/* <p className="absolute top-[30%] right-[40%] text-2xl text-black font-bold">
+                Live Chat
+              </p> */}
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  onClick={() => window.open(demo, "_blank")}
+                >
                   Demo
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  onClick={() => window.open(code, "_blank")}
+                >
                   Code
                 </button>
               </div>

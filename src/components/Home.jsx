@@ -12,10 +12,6 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full  px-4 md:flex-row">
         <div className="flex flex-col justify-center h-1/2 sm:h-full ">
-          <h2 className="hidden text-4xl sm:text-7xl font-bold text-white">
-            I'm a Frontend Developer
-          </h2>
-
           <TypeAnimation
             className="text-4xl sm:text-7xl font-bold text-white "
             sequence={["I'm a Frontend Developer", 1000]}
@@ -24,8 +20,9 @@ const Home = () => {
           />
 
           <p className="text-gray-500 py-4 max-w-md">
-            I have 8 years of experience bbuilding a designig software.
-            Currently, I love to work on web applications using technologies.
+            I have 2+ years of experience in building and designing software.
+            Currently, I love to work on web applications using technologies
+            like JavaScript, React, Redux, Tailwind and Bootstrap.
           </p>
           <div>
             <Link
