@@ -2,6 +2,7 @@ import React from "react";
 import HeroImage from "../assets/heroImage.JPG";
 import { HiArrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
@@ -11,9 +12,18 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full  px-4 md:flex-row">
         <div className="flex flex-col justify-center h-1/2 sm:h-full ">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="hidden text-4xl sm:text-7xl font-bold text-white">
             I'm a Frontend Developer
           </h2>
+
+          <TypeAnimation
+            className="text-4xl sm:text-7xl font-bold text-white "
+            sequence={["I'm a Frontend Developer"]}
+            speed={60}
+            wrapper="h2"
+            repeat={Infinity}
+          />
+
           <p className="text-gray-500 py-4 max-w-md">
             I have 8 years of experience bbuilding a designig software.
             Currently, I love to work on web applications using technologies.
@@ -34,7 +44,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center h-1/3 sm:h-full ">
+        <div className="flex flex-col justify-center h-1/3 sm:h-full max-w-[18rem]">
           <img
             src={HeroImage}
             alt="my profile pic"
