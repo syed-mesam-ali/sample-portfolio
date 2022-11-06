@@ -10,5 +10,6 @@
 - Tailwind
 - react-icons
 - react-scroll
+- react-type-animation
 
 
