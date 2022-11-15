@@ -107,7 +107,7 @@ const Navbar = () => {
           ))}
           <div className="flex flex-row">
             {socialLinks.map((link) => (
-              <li className=" px-4 py-6 cursor-pointer ">
+              <li key={link.id} className=" px-4 py-6 cursor-pointer ">
                 <a
                   href={link.href}
                   className="flex justify-between items-center"
