@@ -13,21 +13,27 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl md:mt-20 ">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,
-          dolores beatae, illum eum minima similique enim magnam alias, culpa
-          rem aliquam eaque unde exercitationem. Quisquam tempora laudantium
-          expedita eius ad fugit distinctio modi repellendus voluptas quae iure,
-          voluptatibus, officia a exercitationem omnis. Laborum in amet cum
-          itaque ut doloribus ipsum.
+          I have a strong background in Javascript and React with six months of
+          experience as an intern and 2.3 years of experience as a Software
+          Engineer L1 at Keross Research and Development Centre Private Limited.
+          I worked on various internal and client projects using Javascript,
+          ReactJs, Html, CSS, Jquery, Bootstrap, and HandlebarJS.
         </p>
         <br />
         <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          error beatae at dolore molestiae facilis exercitationem doloremque.
-          Atque, vero asperiores rerum nostrum aperiam dolore eaque sequi aut
-          reiciendis harum itaque ut eligendi pariatur ducimus! Vel rem
-          cupiditate optio? Iusto quibusdam alias earum veniam consequatur
-          aliquid asperiores sunt rem facilis modi?
+          I completed B.Tech in Information Technology from Bengal Institute of
+          Technology and my schooling at St.Sebastian School.
+        </p>
+        <br />
+        <p className="text-xl">
+          I continue to strive to be a better Software Engineer and invite
+          collaboration for new learning opportunities.
+        </p>
+        <br />
+        <p className="text-xl">
+          <span className="font-bold">Phone :</span> +91 90888 59952
+          <br />
+          <span className="font-bold">Email :</span> syedmesamali@gmail.com
         </p>
       </div>
     </div>
