@@ -17,7 +17,7 @@ const About = () => {
           experience as an intern and 2.3 years of experience as a Software
           Engineer L1 at Keross Research and Development Centre Private Limited.
           I worked on various internal and client projects using Javascript,
-          ReactJs, Html, CSS, Jquery, Bootstrap, and HandlebarJS.
+          ReactJs, Html, CSS, Jquery, Redux, Bootstrap, and HandlebarJS.
         </p>
         <br />
         <p className="text-xl">
