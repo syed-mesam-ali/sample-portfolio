@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.JPG";
+import HeroImage from "../assets/heroImage.jpg";
 import { HiArrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
@@ -20,9 +20,9 @@ const Home = () => {
           />
 
           <p className="text-gray-500 py-4 max-w-md">
-            I have 2+ years of experience in building and designing software.
+            I have 5+ years of experience in building and designing software.
             Currently, I love to work on web applications using technologies
-            like JavaScript, React, Redux, Tailwind and Bootstrap.
+            like JavaScript, React, NextJs, Redux, Tailwind and Bootstrap.
           </p>
           <div>
             <Link
